@@ -1,0 +1,430 @@
+[0m04:58:40.387627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4CA071B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4CA132650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4CA132850>]}
+
+
+============================== 04:58:40.395435 | 00456f10-8d0d-48d2-999b-e9e41a5096bd ==============================
+[0m04:58:40.395435 [info ] [MainThread]: Running with dbt=1.11.11
+[0m04:58:40.395435 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug --profiles-dir .', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\diall\\Downloads\\Fichiers finaux\\airflow-dbt-fabric\\dags\\nyc_taxi_green\\logs'}
+[0m04:58:40.397440 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m04:58:40.398455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '00456f10-8d0d-48d2-999b-e9e41a5096bd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4CA132150>]}
+[0m04:58:40.445616 [info ] [MainThread]: dbt version: 1.11.11
+[0m04:58:40.447127 [info ] [MainThread]: python version: 3.11.3
+[0m04:58:40.448140 [info ] [MainThread]: python path: C:\Program Files\Python311\python.exe
+[0m04:58:40.449162 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m04:58:40.951630 [info ] [MainThread]: Using profiles dir at .
+[0m04:58:40.953133 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
+[0m04:58:40.954139 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\dbt_project.yml
+[0m04:58:40.954139 [info ] [MainThread]: adapter type: fabric
+[0m04:58:40.955732 [info ] [MainThread]: adapter version: 1.10.0
+[0m04:58:41.064132 [info ] [MainThread]: Configuration:
+[0m04:58:41.065640 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m04:58:41.067646 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m04:58:41.068157 [info ] [MainThread]: Required dependencies:
+[0m04:58:41.069170 [debug] [MainThread]: Executing "git --help"
+[0m04:58:41.115936 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:58:41.116945 [debug] [MainThread]: STDERR: "b''"
+[0m04:58:41.117953 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m04:58:41.118954 [info ] [MainThread]: Connection:
+[0m04:58:41.118954 [info ] [MainThread]:   server: darotj3cokvunnehuukvqdnj7i-ry4r2s33k7lehayqmk2bv3lyte.datawarehouse.fabric.microsoft.com
+[0m04:58:41.119951 [info ] [MainThread]:   database: taxi
+[0m04:58:41.119951 [info ] [MainThread]:   schema: dbo
+[0m04:58:41.120952 [info ] [MainThread]:   warehouse_snapshot_name: None
+[0m04:58:41.121952 [info ] [MainThread]:   snapshot_timestamp: None
+[0m04:58:41.121952 [info ] [MainThread]:   UID: None
+[0m04:58:41.122951 [info ] [MainThread]:   workspace_id: None
+[0m04:58:41.122951 [info ] [MainThread]:   authentication: CLI
+[0m04:58:41.123951 [info ] [MainThread]:   retries: 3
+[0m04:58:41.124952 [info ] [MainThread]:   login_timeout: 0
+[0m04:58:41.125951 [info ] [MainThread]:   query_timeout: 0
+[0m04:58:41.125951 [info ] [MainThread]:   trace_flag: False
+[0m04:58:41.127069 [info ] [MainThread]:   encrypt: True
+[0m04:58:41.127573 [info ] [MainThread]:   trust_cert: False
+[0m04:58:41.128580 [info ] [MainThread]:   api_url: https://api.fabric.microsoft.com/v1
+[0m04:58:41.128580 [info ] [MainThread]:   pooling: True
+[0m04:58:41.130330 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m04:58:41.481957 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m04:58:41.482462 [debug] [MainThread]: Using fabric connection "debug"
+[0m04:58:41.482462 [debug] [MainThread]: On debug: select 1 as id
+[0m04:58:41.483467 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:58:41.484198 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=darotj3cokvunnehuukvqdnj7i-ry4r2s33k7lehayqmk2bv3lyte.datawarehouse.fabric.microsoft.com;Database=taxi;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m04:58:45.227822 [debug] [MainThread]: fabric adapter: Connected to db: taxi
+[0m04:58:45.262232 [debug] [MainThread]: SQL status: OK in 4.000 seconds
+[0m04:58:45.264232 [debug] [MainThread]: On debug: Close
+[0m04:58:45.265950 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m04:58:45.284163 [info ] [MainThread]: [32mAll checks passed![0m
+[0m04:58:45.286680 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ProjectFlagsMovedDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m04:58:45.291152 [debug] [MainThread]: Command `dbt debug` succeeded at 04:58:45.290063 after 5.03 seconds
+[0m04:58:45.291152 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m04:58:45.292647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4CA065550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4CA1C1D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4C9F39310>]}
+[0m04:58:45.292647 [debug] [MainThread]: Flushing usage events
+[0m04:58:45.859374 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:59:17.015697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018040524090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180405B6010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001804051FF50>]}
+
+
+============================== 04:59:17.021948 | 65827e63-5087-4942-9c66-c9facf863a06 ==============================
+[0m04:59:17.021948 [info ] [MainThread]: Running with dbt=1.11.11
+[0m04:59:17.023456 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt seed --profiles-dir .', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\diall\\Downloads\\Fichiers finaux\\airflow-dbt-fabric\\dags\\nyc_taxi_green\\logs'}
+[0m04:59:17.023456 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m04:59:17.025463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '65827e63-5087-4942-9c66-c9facf863a06', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018040328D10>]}
+[0m04:59:17.620375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65827e63-5087-4942-9c66-c9facf863a06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001804043DC10>]}
+[0m04:59:17.689803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65827e63-5087-4942-9c66-c9facf863a06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180405C11D0>]}
+[0m04:59:17.690868 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m04:59:17.975946 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m04:59:17.977452 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m04:59:17.977452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '65827e63-5087-4942-9c66-c9facf863a06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180420F3690>]}
+[0m04:59:19.597836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '65827e63-5087-4942-9c66-c9facf863a06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018041D6A150>]}
+[0m04:59:19.719954 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\manifest.json
+[0m04:59:19.726466 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\semantic_manifest.json
+[0m04:59:19.752810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '65827e63-5087-4942-9c66-c9facf863a06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180424955D0>]}
+[0m04:59:19.752810 [info ] [MainThread]: Found 1 model, 525 macros
+[0m04:59:19.754317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65827e63-5087-4942-9c66-c9facf863a06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018041EA5850>]}
+[0m04:59:19.757442 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m04:59:19.758448 [debug] [MainThread]: Command end result
+[0m04:59:19.802897 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\manifest.json
+[0m04:59:19.805547 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\semantic_manifest.json
+[0m04:59:19.811112 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\run_results.json
+[0m04:59:19.811112 [info ] [MainThread]: 
+[0m04:59:19.813114 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:59:19.814118 [info ] [MainThread]: 
+[0m04:59:19.815637 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=0
+[0m04:59:19.816749 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ProjectFlagsMovedDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m04:59:19.818230 [debug] [MainThread]: Command `dbt seed` succeeded at 04:59:19.818230 after 2.91 seconds
+[0m04:59:19.818230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180405B6010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180404743D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018039DA8190>]}
+[0m04:59:19.819274 [debug] [MainThread]: Flushing usage events
+[0m04:59:20.347818 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:59:43.981910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1526B2790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E152745D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1526B1F90>]}
+
+
+============================== 04:59:43.990964 | efade8ca-fc50-4db9-9c1d-dcb7063ee152 ==============================
+[0m04:59:43.990964 [info ] [MainThread]: Running with dbt=1.11.11
+[0m04:59:43.991982 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --profiles-dir .', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\diall\\Downloads\\Fichiers finaux\\airflow-dbt-fabric\\dags\\nyc_taxi_green\\logs'}
+[0m04:59:43.992965 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m04:59:43.993968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E15276FF10>]}
+[0m04:59:44.832344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E153FFC6D0>]}
+[0m04:59:44.924251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1516D8350>]}
+[0m04:59:44.925766 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m04:59:45.314011 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m04:59:45.558743 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:59:45.559740 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:59:45.560728 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:59:45.594269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1543F8250>]}
+[0m04:59:45.705417 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\manifest.json
+[0m04:59:45.710410 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\semantic_manifest.json
+[0m04:59:45.726397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1542EFF90>]}
+[0m04:59:45.727411 [info ] [MainThread]: Found 1 model, 525 macros
+[0m04:59:45.727933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E152776D50>]}
+[0m04:59:45.731274 [info ] [MainThread]: 
+[0m04:59:45.732820 [info ] [MainThread]: Concurrency: 4 threads (target='fabric-dev')
+[0m04:59:45.733828 [info ] [MainThread]: 
+[0m04:59:45.733828 [debug] [MainThread]: Acquiring new fabric connection 'master'
+[0m04:59:45.736921 [debug] [ThreadPool]: Acquiring new fabric connection 'list_taxi'
+[0m04:59:45.758819 [debug] [ThreadPool]: dbt-fabric
+[0m04:59:45.760319 [debug] [ThreadPool]: Using fabric connection "list_taxi"
+[0m04:59:45.760817 [debug] [ThreadPool]: On list_taxi: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "connection_name": "list_taxi"} */
+USE [taxi];
+    select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m04:59:45.760817 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:59:45.762320 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=darotj3cokvunnehuukvqdnj7i-ry4r2s33k7lehayqmk2bv3lyte.datawarehouse.fabric.microsoft.com;Database=taxi;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m04:59:47.750122 [debug] [ThreadPool]: fabric adapter: Connected to db: taxi
+[0m04:59:47.751130 [warn ] [ThreadPool]: fabric adapter: No workspace_id provided; skipping snapshot management.
+[0m04:59:47.793019 [debug] [ThreadPool]: SQL status: OK in 2.000 seconds
+[0m04:59:47.795819 [debug] [ThreadPool]: On list_taxi: Close
+[0m04:59:47.796832 [debug] [ThreadPool]: Acquiring new fabric connection 'list_taxi_dbo'
+[0m04:59:47.809174 [debug] [ThreadPool]: dbt-fabric
+[0m04:59:47.810144 [debug] [ThreadPool]: Using fabric connection "list_taxi_dbo"
+[0m04:59:47.811177 [debug] [ThreadPool]: On list_taxi_dbo: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "connection_name": "list_taxi_dbo"} */
+USE [taxi];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      where SCHEMA_NAME(t.schema_id) like 'dbo'
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+      where SCHEMA_NAME(v.schema_id) like 'dbo'
+    )
+    select * from base
+    
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m04:59:47.811177 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:59:47.812177 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=darotj3cokvunnehuukvqdnj7i-ry4r2s33k7lehayqmk2bv3lyte.datawarehouse.fabric.microsoft.com;Database=taxi;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m04:59:47.813173 [debug] [ThreadPool]: fabric adapter: Connected to db: taxi
+[0m04:59:47.900389 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m04:59:47.904296 [debug] [ThreadPool]: On list_taxi_dbo: Close
+[0m04:59:47.907967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E152776D50>]}
+[0m04:59:47.909572 [debug] [MainThread]: On master: COMMIT
+[0m04:59:47.918451 [debug] [Thread-3 (]: Began running node model.nyc_taxi_green.nyc_trip_count
+[0m04:59:47.919462 [info ] [Thread-3 (]: 1 of 1 START sql table model dbo.nyc_trip_count ................................ [RUN]
+[0m04:59:47.920460 [debug] [Thread-3 (]: Acquiring new fabric connection 'model.nyc_taxi_green.nyc_trip_count'
+[0m04:59:47.921543 [debug] [Thread-3 (]: Began compiling node model.nyc_taxi_green.nyc_trip_count
+[0m04:59:47.935464 [debug] [Thread-3 (]: Writing injected SQL for node "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:47.938716 [debug] [Thread-3 (]: Began executing node model.nyc_taxi_green.nyc_trip_count
+[0m04:59:47.974365 [debug] [Thread-3 (]: Applying DROP to: [taxi].[dbo].[nyc_trip_count__dbt_temp]
+[0m04:59:47.982002 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:47.982002 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+      
+    USE [taxi];
+    EXEC('DROP table IF EXISTS [dbo].[nyc_trip_count__dbt_temp];');
+
+[0m04:59:47.983002 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:59:47.983002 [debug] [Thread-3 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=darotj3cokvunnehuukvqdnj7i-ry4r2s33k7lehayqmk2bv3lyte.datawarehouse.fabric.microsoft.com;Database=taxi;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m04:59:48.454670 [debug] [Thread-3 (]: fabric adapter: Connected to db: taxi
+[0m04:59:48.515697 [debug] [Thread-3 (]: SQL status: OK in 1.000 seconds
+[0m04:59:48.520918 [debug] [Thread-3 (]: Applying DROP to: [taxi].[dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw]
+[0m04:59:48.522917 [debug] [Thread-3 (]: dbt-fabric
+[0m04:59:48.523950 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:48.523950 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+        USE [taxi];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'taxi'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'nyc_trip_count__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m04:59:48.645259 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m04:59:48.648775 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:48.648775 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+      
+      
+    
+    USE [taxi];
+    EXEC('DROP view IF EXISTS [dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw];');
+
+[0m04:59:48.698722 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m04:59:48.725774 [debug] [Thread-3 (]: dbt-fabric
+[0m04:59:48.731793 [debug] [Thread-3 (]: Applying DROP to: [taxi].[dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw]
+[0m04:59:48.733790 [debug] [Thread-3 (]: dbt-fabric
+[0m04:59:48.734790 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:48.735788 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+        USE [taxi];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'taxi'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'nyc_trip_count__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m04:59:48.783928 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m04:59:48.787953 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:48.788959 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+      
+      
+    
+    USE [taxi];
+    EXEC('DROP view IF EXISTS [dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw];');
+
+[0m04:59:48.825988 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m04:59:48.841469 [debug] [Thread-3 (]: Writing runtime sql for node "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:48.843891 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m04:59:48.845401 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+  
+    
+    
+    USE [taxi];
+    
+    
+
+    EXEC('create view [dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw] as with new_york_taxis as (
+       select * from nyctlc
+   ),
+   final as (
+     SELECT
+       vendorID,
+       CAST(lpepPickupDatetime AS DATE) AS trip_date,
+       COUNT(*) AS trip_count
+     FROM
+         [taxi].[dbo].[nyctlc]
+     GROUP BY
+         vendorID,
+         CAST(lpepPickupDatetime AS DATE)
+   
+   )
+   select * from final;');
+
+
+
+
+    
+    
+
+    
+    
+            EXEC('CREATE TABLE [taxi].[dbo].[nyc_trip_count__dbt_temp]  AS SELECT * FROM [taxi].[dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw] 
+    OPTION (LABEL = ''dbt-fabric-dw'');
+');
+        
+    
+
+
+  
+  
+[0m05:00:11.492166 [debug] [Thread-3 (]: SQL status: OK in 23.000 seconds
+[0m05:00:11.517283 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m05:00:11.519537 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+USE [taxi];
+      EXEC sp_rename 'dbo.nyc_trip_count__dbt_temp', 'nyc_trip_count'
+[0m05:00:12.142943 [debug] [Thread-3 (]: SQL status: OK in 1.000 seconds
+[0m05:00:12.156102 [debug] [Thread-3 (]: Applying DROP to: [taxi].[dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw]
+[0m05:00:12.160628 [debug] [Thread-3 (]: dbt-fabric
+[0m05:00:12.164214 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m05:00:12.166719 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+        USE [taxi];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'taxi'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'nyc_trip_count__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m05:00:12.206232 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m05:00:12.209085 [debug] [Thread-3 (]: Using fabric connection "model.nyc_taxi_green.nyc_trip_count"
+[0m05:00:12.210092 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "nyc_taxi_green", "target_name": "fabric-dev", "node_id": "model.nyc_taxi_green.nyc_trip_count"} */
+
+      
+      
+    
+    USE [taxi];
+    EXEC('DROP view IF EXISTS [dbo].[nyc_trip_count__dbt_temp__dbt_tmp_vw];');
+
+[0m05:00:12.259105 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m05:00:12.287450 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: COMMIT
+[0m05:00:12.293593 [debug] [Thread-3 (]: On model.nyc_taxi_green.nyc_trip_count: Close
+[0m05:00:12.296511 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efade8ca-fc50-4db9-9c1d-dcb7063ee152', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E154507150>]}
+[0m05:00:12.297553 [info ] [Thread-3 (]: 1 of 1 OK created sql table model dbo.nyc_trip_count ........................... [[32mOK[0m in 24.37s]
+[0m05:00:12.298553 [debug] [Thread-3 (]: Finished running node model.nyc_taxi_green.nyc_trip_count
+[0m05:00:12.300751 [debug] [MainThread]: On master: COMMIT
+[0m05:00:12.301842 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:00:12.302757 [debug] [MainThread]: Connection 'list_taxi' was properly closed.
+[0m05:00:12.302757 [debug] [MainThread]: Connection 'list_taxi_dbo' was properly closed.
+[0m05:00:12.303750 [debug] [MainThread]: Connection 'model.nyc_taxi_green.nyc_trip_count' was properly closed.
+[0m05:00:12.303750 [info ] [MainThread]: 
+[0m05:00:12.305147 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 26.57 seconds (26.57s).
+[0m05:00:12.306154 [debug] [MainThread]: Command end result
+[0m05:00:12.354995 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\manifest.json
+[0m05:00:12.358908 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\semantic_manifest.json
+[0m05:00:12.370046 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\run_results.json
+[0m05:00:12.371640 [info ] [MainThread]: 
+[0m05:00:12.372684 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:00:12.373729 [info ] [MainThread]: 
+[0m05:00:12.374770 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m05:00:12.375815 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ProjectFlagsMovedDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m05:00:12.378429 [debug] [MainThread]: Command `dbt run` succeeded at 05:00:12.377904 after 28.53 seconds
+[0m05:00:12.380113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E15239F8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E15458AB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E153EB4390>]}
+[0m05:00:12.381171 [debug] [MainThread]: Flushing usage events
+[0m05:00:12.993196 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:00:38.251593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD5F10250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD5F0BFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD5F0B3D0>]}
+
+
+============================== 05:00:38.255097 | 2d02e65f-c603-4caa-8fda-77614159f76a ==============================
+[0m05:00:38.255097 [info ] [MainThread]: Running with dbt=1.11.11
+[0m05:00:38.256101 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'invocation_command': 'dbt test --profiles-dir .', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\diall\\Downloads\\Fichiers finaux\\airflow-dbt-fabric\\dags\\nyc_taxi_green\\logs'}
+[0m05:00:38.257101 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m05:00:38.257606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2d02e65f-c603-4caa-8fda-77614159f76a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD5F0BF50>]}
+[0m05:00:38.771798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d02e65f-c603-4caa-8fda-77614159f76a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD78BE290>]}
+[0m05:00:38.843027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d02e65f-c603-4caa-8fda-77614159f76a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD4F34390>]}
+[0m05:00:38.843533 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m05:00:39.257358 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m05:00:39.501539 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m05:00:39.502538 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m05:00:39.503759 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m05:00:39.542510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d02e65f-c603-4caa-8fda-77614159f76a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD7CB0250>]}
+[0m05:00:39.757292 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\manifest.json
+[0m05:00:39.761308 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\semantic_manifest.json
+[0m05:00:39.793691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d02e65f-c603-4caa-8fda-77614159f76a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD7C01910>]}
+[0m05:00:39.795242 [info ] [MainThread]: Found 1 model, 525 macros
+[0m05:00:39.797676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d02e65f-c603-4caa-8fda-77614159f76a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD7AE6E90>]}
+[0m05:00:39.799670 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m05:00:39.804072 [debug] [MainThread]: Command end result
+[0m05:00:39.853807 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\manifest.json
+[0m05:00:39.859026 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\semantic_manifest.json
+[0m05:00:39.867239 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\diall\Downloads\Fichiers finaux\airflow-dbt-fabric\dags\nyc_taxi_green\target\run_results.json
+[0m05:00:39.868618 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ProjectFlagsMovedDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m05:00:39.870252 [debug] [MainThread]: Command `dbt test` succeeded at 05:00:39.870252 after 1.76 seconds
+[0m05:00:39.870252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD6002490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD5E6C7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CD5E643D0>]}
+[0m05:00:39.871264 [debug] [MainThread]: Flushing usage events
+[0m05:00:40.365250 [debug] [MainThread]: An error was encountered while trying to flush usage events
