@@ -8,7 +8,7 @@ nyc_taxi_green:
       type: fabric
       authentication: CLI
       driver: "ODBC Driver 18 for SQL Server"
-      host: "darotj3cokvunnehuukvqdnj7i-3k3f5vthqylujfs4ef2p73sxvm.datawarehouse.fabric.microsoft.com"
+      host: "darotj3cokvunnehuukvqdnj7i-ry4r2s33k7lehayqmk2bv3lyte.datawarehouse.fabric.microsoft.com"
       database: "taxi"
       schema: "dbo"
       threads: 4
